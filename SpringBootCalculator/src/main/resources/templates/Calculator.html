@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<h3> Calculator </h3>
+<form th:action="@{/Calculations}" method="GET">
+    Enter your first number:
+    <br>
+    <input type="number" name="firstNumber">
+    <br><br>
+    Enter the operator to perform an operation:
+    <input type="text" name="operator">
+    <br><br>
+    Enter your second number:
+    <input type="number" name="secondNumber">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
